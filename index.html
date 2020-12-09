@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<title>teste bootstrap3</title>
+</head>
+<body>
+	<!--Observações-->
+	<!--primary / info / warning / danger / success-->
+	<!-- col-xs = até 480px -->
+	<!-- col-sm = maior ou igual a 768px-->
+	<!-- col-md = maior ou igual a 998px-->
+	<!-- col-lg = maior ou igual a 1200px-->
+	<!-- <h1> 36px -->
+	<!-- <h2> 30px -->
+	<!-- <h3> 24px -->
+	<!-- <h4> 18px -->
+	<!-- <h5> 14px -->
+	<!-- <h6> 12px -->
+	<!--/Observações-->
+
+	<!-- tipos de container -->
+	<div class="jumbotron">
+			<div class="container">
+				<h1>container fixo</h1>
+			</div>
+			<div class="container-fluid">
+				<h1>container fluido </h1>
+			</div>
+	</div>	
+
+	<div class="jumbotron">
+		<div class="container-fluid">
+			<div class="row">
+				<aside class="col-md-4 col-lg-10">
+					is aside
+				</aside>
+				<article class="col-md-8 col-lg-2">
+					my article
+				</article>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- posição de texto -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="text-left">texto a esquerda</p>
+			<p class="text-right">texto a direita</p>
+			<p class="text-center">texto no centro</p>
+			<p class="text-justify">texto justificado</p>
+		</div>
+	</div>
+
+
+	<!--lista sem estilo-->
+	<div class="jumbotron">
+		<div class="container">
+			<ul class="list-unstyled">
+				<li> teste </li>
+				<li> teste </li>
+				<li> teste </li>
+				<li> teste </li>
+				<li> teste </li>
+				<li> teste </li>
+			</ul>
+		</div>
+	</div>
+
+
+	<!-- lista em linha-->
+	<div class="jumbotron">
+		<div class="container">
+			<ul class="list-inline">
+				<li> teste </li>
+				<li> teste </li>
+				<li> teste </li>
+				<li> teste </li>
+				<li> teste </li>
+				<li> teste </li>
+			</ul>
+		</div>
+	</div>
+
+
+	<!-- tabela -->
+	<div class="jumbotron">
+		<div class="container">
+			<table  class="table">
+				<tr>
+					<!-- celula de titulo -->
+					<th>Agudo</th>
+					<th>Grave</th>	
+				</tr>
+				<tr>
+					<td>trompete</td>
+					<td>trombone</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<!-- tabela com linhas de cores diferentes -->
+	<div class="jumbotron">
+		<div class="container">
+			<table  class="table table-striped">
+				<tr>
+					<!-- celula de titulo -->
+					<th>Agudo</th>
+					<th>Grave</th>	
+				</tr>
+				<tr>
+					<td>trompete</td>
+					<td>trombone</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+
+	<!-- menos padding -->
+	<div class="jumbotron">
+		<div class="container">
+			<table  class="table table-striped table-condensed">
+				<tr>
+					<!-- celula de titulo -->
+					<th>Agudo</th>
+					<th>Grave</th>	
+				</tr>
+				<tr>
+					<td>trompete</td>
+					<td>trombone</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<!-- hover sobre linhas, bordas e responsividade -->
+	<div class="jumbotron">
+		<div class="container">
+			<table  class="table table-striped table-hover table-bordered table-responsive">
+				<tr>
+					<!-- celula de titulo -->
+					<!-- linhas decoradas:
+						 active
+						 sucess
+						 info
+						 warning
+						 danger-->
+					<th class="warning">Agudo</th>
+					<th>Grave</th>	
+				</tr>
+				<tr>
+					<td>trompete</td>
+					<td>trombone</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<!-- formulario -->
+	<div class="jumbotron">
+		<div class="container">
+			<form>
+				<!-- campo de texto -->
+				<input type="text" class="form-control"/>
+				<!-- entrada de opção-->
+				<select class="form-control">
+					<option> teste </option>
+					<option> teste </option>
+				</select>
+				<!-- caixa de texto -->
+				<textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+			</form>
+		</div>
+	</div>
+
+	<!-- formulario na mesma linha -->
+	<div class="jumbotron">
+		<div class="container">
+			<form class="form-inline">
+				<!-- campo de texto -->
+				<input type="text" class="form-control"/>
+				<!-- entrada de opção-->
+				<select class="form-control">
+					<option> teste </option>
+					<option> teste </option>
+				</select>
+				<!-- caixa de texto -->
+				<textarea name="" class="form-control" id="" cols="30"></textarea>
+			</form>
+		</div>
+	</div>
+
+
+	<!-- formulario horizontal e agrupando com tamanho-->
+	<div class="jumbotron">
+		<div class="container">
+			<form class="form-horizontal form-group col-md-6">
+				<!-- campo de texto -->
+				<input type="text" class="form-control"/>
+				<!-- entrada de opção-->
+				<select class="form-control">
+					<option> teste </option>
+					<option> teste </option>
+				</select>
+				<!-- caixa de texto -->
+				<textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+			</form>
+		</div>
+	</div>
+
+	<!-- checkbox e radio -->
+	<div class="jumbotron">
+		<div class="container">
+			<form>
+				<div class="checkbox-inline">
+					<input type="checkbox"/> valor
+				</div>
+				<div class="radio-inline">
+					<input type="radio"/> valor
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="jumbotron">
+		<div class="container-fluid">
+			<input type="text" class="form-control"/>
+			<br/>
+			<input type="text" class="form-control input-sm"/>
+			<br/>
+			<input type="text" class="form-control input-lg"/>
+		</div>
+	</div>
+
+	<!-- validação -->
+	<div class="jumbotron">
+		<div class="container">
+			<div class="has-warning">
+				<label class="control-label" for="warning">email</label>
+				<input type="text" class="form-control" id="warning"/>
+			</div>
+		</div>
+	</div>
+
+	<!-- botões:
+		 default
+		 primary
+		 success
+		 info
+		 warning
+		 danger
+		 link -->
+
+	<!-- componente base | modificador | estilo -->
+	<!-- ex: .btn | .btn-sm | .btn-primary -->
+	<!-- grupo de botoes -->
+	<div class="jumbotron">
+		<div class="container">
+			<div class="btn-group-lg">
+				<button class="btn btn-primary"> teste </button>
+				<button class="btn btn-primary"> teste </button>
+			</div>
+		</div>
+	</div>
+
+	<!-- toolbar -->
+	<div class="jumbotron">
+		<div class="container">
+			<div class="btn-toolbar">
+				<div class="btn-group-lg">
+					<button class="btn btn-primary"> teste </button>
+					<button class="btn btn-primary"> teste </button>
+				</div>
+				<div class="btn-group-sm">
+					<button class="btn btn-warning"> teste </button>
+					<button class="btn btn-warning"> teste </button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- botão com menu -->
+	<div class="jumbotron">
+		<div class="container">
+			<div class="btn-group"><!-- .btn-group-dropup (coloca o menu por cima) -->
+				<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">abrir caixa</button>
+
+				<ul class="dropdown-menu">
+					<li><a href="#">action</a></li>
+					<li><a href="#">action</a></li>
+					<li><a href="#">action</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">separated link</a></li>
+				</ul>
+			</div>	
+		</div>
+	</div>
+
+
+	<!-- carregamento de botão -->
+	<div class="jumbotron">
+		<div class="container">
+			<button class="btn btn-lg btn-loading btn-primary" data-loading-text="carregando..." >
+				não esquecer!!!
+			</button>
+		</div>
+	</div>
+
+	<div class="jumbotron">
+		<div class="container">
+			<div class="btn-group" data-toggle="buttons">
+				<label class="btn-primary active">
+					<input type="radio" name="options" id="option1" checked>radio 1
+				</label>
+				<label class="btn btn-primary">
+					<input type="radio" name="options" id="option2" checked>radio 2
+				</label>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<!-- carregamento de botão script -->
+	<script>
+		$(function(){
+		$('.btn-loading').on('click',function(){
+			$btn = $(this).button('loading');
+			setTImeout(function(){
+				$btn.button('reset');
+			},1000);
+		});
+	});
+	</script>
+
+</body>
+</html>
