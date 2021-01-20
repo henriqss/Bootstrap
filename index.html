@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
+
 <head>
-	<meta charset="UTF-8"/>
-	 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-	<title>teste bootstrap3</title>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title>bootstrap3</title>
+	<style>
+		.jumbotron {
+			background-color: #7a00ec;
+		}
+
+		body {
+			color: #000000;
+		}
+	</style>
 </head>
+
 <body>
 	<!--Observações-->
 	<!--primary / info / warning / danger / success-->
@@ -22,13 +37,13 @@
 
 	<!-- tipos de container -->
 	<div class="jumbotron">
-			<div class="container">
-				<h1>container fixo</h1>
-			</div>
-			<div class="container-fluid">
-				<h1>container fluido </h1>
-			</div>
-	</div>	
+		<div class="container">
+			<h1>container fixo</h1>
+		</div>
+		<div class="container-fluid">
+			<h1>container fluido </h1>
+		</div>
+	</div>
 
 	<div class="jumbotron">
 		<div class="container-fluid">
@@ -88,11 +103,11 @@
 	<!-- tabela -->
 	<div class="jumbotron">
 		<div class="container">
-			<table  class="table">
+			<table class="table">
 				<tr>
 					<!-- celula de titulo -->
 					<th>Agudo</th>
-					<th>Grave</th>	
+					<th>Grave</th>
 				</tr>
 				<tr>
 					<td>trompete</td>
@@ -105,11 +120,11 @@
 	<!-- tabela com linhas de cores diferentes -->
 	<div class="jumbotron">
 		<div class="container">
-			<table  class="table table-striped">
+			<table class="table table-striped">
 				<tr>
 					<!-- celula de titulo -->
 					<th>Agudo</th>
-					<th>Grave</th>	
+					<th>Grave</th>
 				</tr>
 				<tr>
 					<td>trompete</td>
@@ -123,11 +138,11 @@
 	<!-- menos padding -->
 	<div class="jumbotron">
 		<div class="container">
-			<table  class="table table-striped table-condensed">
+			<table class="table table-striped table-condensed">
 				<tr>
 					<!-- celula de titulo -->
 					<th>Agudo</th>
-					<th>Grave</th>	
+					<th>Grave</th>
 				</tr>
 				<tr>
 					<td>trompete</td>
@@ -140,7 +155,7 @@
 	<!-- hover sobre linhas, bordas e responsividade -->
 	<div class="jumbotron">
 		<div class="container">
-			<table  class="table table-striped table-hover table-bordered table-responsive">
+			<table class="table table-striped table-hover table-bordered table-responsive">
 				<tr>
 					<!-- celula de titulo -->
 					<!-- linhas decoradas:
@@ -150,7 +165,7 @@
 						 warning
 						 danger-->
 					<th class="warning">Agudo</th>
-					<th>Grave</th>	
+					<th>Grave</th>
 				</tr>
 				<tr>
 					<td>trompete</td>
@@ -165,7 +180,7 @@
 		<div class="container">
 			<form>
 				<!-- campo de texto -->
-				<input type="text" class="form-control"/>
+				<input type="text" class="form-control" />
 				<!-- entrada de opção-->
 				<select class="form-control">
 					<option> teste </option>
@@ -182,7 +197,7 @@
 		<div class="container">
 			<form class="form-inline">
 				<!-- campo de texto -->
-				<input type="text" class="form-control"/>
+				<input type="text" class="form-control" />
 				<!-- entrada de opção-->
 				<select class="form-control">
 					<option> teste </option>
@@ -200,7 +215,7 @@
 		<div class="container">
 			<form class="form-horizontal form-group col-md-6">
 				<!-- campo de texto -->
-				<input type="text" class="form-control"/>
+				<input type="text" class="form-control" />
 				<!-- entrada de opção-->
 				<select class="form-control">
 					<option> teste </option>
@@ -217,10 +232,10 @@
 		<div class="container">
 			<form>
 				<div class="checkbox-inline">
-					<input type="checkbox"/> valor
+					<input type="checkbox" /> valor
 				</div>
 				<div class="radio-inline">
-					<input type="radio"/> valor
+					<input type="radio" /> valor
 				</div>
 			</form>
 		</div>
@@ -228,11 +243,11 @@
 
 	<div class="jumbotron">
 		<div class="container-fluid">
-			<input type="text" class="form-control"/>
-			<br/>
-			<input type="text" class="form-control input-sm"/>
-			<br/>
-			<input type="text" class="form-control input-lg"/>
+			<input type="text" class="form-control" />
+			<br />
+			<input type="text" class="form-control input-sm" />
+			<br />
+			<input type="text" class="form-control input-lg" />
 		</div>
 	</div>
 
@@ -241,7 +256,7 @@
 		<div class="container">
 			<div class="has-warning">
 				<label class="control-label" for="warning">email</label>
-				<input type="text" class="form-control" id="warning"/>
+				<input type="text" class="form-control" id="warning" />
 			</div>
 		</div>
 	</div>
@@ -286,7 +301,8 @@
 	<!-- botão com menu -->
 	<div class="jumbotron">
 		<div class="container">
-			<div class="btn-group"><!-- .btn-group-dropup (coloca o menu por cima) -->
+			<div class="btn-group">
+				<!-- .btn-group-dropup (coloca o menu por cima) -->
 				<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">abrir caixa</button>
 
 				<ul class="dropdown-menu">
@@ -296,7 +312,7 @@
 					<li role="separator" class="divider"></li>
 					<li><a href="#">separated link</a></li>
 				</ul>
-			</div>	
+			</div>
 		</div>
 	</div>
 
@@ -304,7 +320,7 @@
 	<!-- carregamento de botão -->
 	<div class="jumbotron">
 		<div class="container">
-			<button class="btn btn-lg btn-loading btn-primary" data-loading-text="carregando..." >
+			<button class="btn btn-lg btn-loading btn-primary" data-loading-text="carregando...">
 				não esquecer!!!
 			</button>
 		</div>
@@ -323,21 +339,425 @@
 		</div>
 	</div>
 
+	<!-- imagem -->
+	<div class="jumbotron">
+		<div class="container">
+			<img src="pont.jpg" class="img-responsive" alt="imagem" />
+			<!-- classes auxiliares:
+			class="img-responsive" = torna a imagem responsiva
+			class="img-rounded" = deixa as bordas arredondadas
+			class="center-block" = centraliza
+			class="img-circle" = deixa a img em um circulo
+			class="img-thumbnail" = aplica uma moldura
+		 -->
+		</div>
+	</div>
+
+
+	<!-- Iframe, embed e outros
+	class="embed-responsive" -->
+	<div class="jumbotron">
+		<div class="container">
+			<div class="embed-responsive embed-responsive-4by3">
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/8l3Zip2OwLc" frameborder="0"
+					allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+	<!-- hidden = ocultar -->
+	<div class="jumbotron">
+		<div class="container">
+			<div class="show">mostra</div>
+			<div class="hidden">esconde</div>
+			<div class="hidden-xs">mobile</div>
+			<div class="hidden-sm">tablet</div>
+			<div class="hidden-md">monitor M</div>
+			<div class="hidden-lg">monitor G</div>
+		</div>
+	</div>
+
+	<!-- visible = mostrar -->
+	<div class="jumbotron">
+		<div class="container">
+			<div class="visible-xs-12">mobile</div>
+			<div class="visible-sm-12">tablet</div>
+			<div class="visible-md-12">monitor M</div>
+			<div class="visible-lg-12">monitor G</div>
+		</div>
+	</div>
+
+	<!-- fundo -->
+	<div class="jumbotron">
+		<div class="container">
+			<div class="bg-primary">fundo</div>
+			<div class="bg-info">fundo</div>
+			<div class="bg-warning">fundo</div>
+			<div class="bg-success">fundo</div>
+			<div class="bg-danger">fundo</div>
+		</div>
+	</div>
+
+	<!-- icones -->
+	<!-- Glyphicons -->
+	<div class="jumbotron">
+		<div class="container">
+			<span class="glyphicon glyphicon-ok">icone</span>
+			<!-- outros:
+			Font Awesome
+			fontello.com 
+			flaticon.com -->
+		</div>
+	</div>
+
+	<!-- abas -->
+	<div class="jumbotron">
+		<div class="container">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="">Home</a></li>
+				<li class="active"><a href="">Profile</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- abas pills -->
+	<div class="jumbotron">
+		<div class="container">
+			<ul class="nav nav-pills">
+				<li class="active"><a href="">Home</a></li>
+				<li class="active"><a href="">Profile</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- abas na vertical -->
+	<div class="jumbotron">
+		<div class="container">
+			<ul class="nav nav-stacked">
+				<li class="active"><a href="">Home</a></li>
+				<li class="active"><a href="">Profile</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- abas justificado -->
+	<div class="jumbotron">
+		<div class="container">
+			<ul class="nav nav-justified">
+				<li class="active"><a href="">Home</a></li>
+				<li class="active"><a href="">Profile</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- abas com dropdown -->
+	<div class="jumbotron">
+		<div class="container">
+			<ul class="nav nav-pills">
+				<li role="presentation" class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown"
+						href="">dropdown<span class="caret">
+						</span></a>
+					<ul class="dropdown-menu">
+						<li class="active"><a href="">Home</a></li>
+						<li class="active"><a href="">Profile</a></li>
+					</ul>
+				</li>
+				<li role="presentation" class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown"
+						href="">dropdown2<span class="caret">
+						</span></a>
+					<ul class="dropdown-menu">
+						<li class="active"><a href="">Home</a></li>
+						<li class="active"><a href="">Profile</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- nav -->
+	<div class="jumbotron">
+		<div class="container">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#home" data-toggle="tab">Home</a> </li>
+				<li><a href="#profile" data-toggle="tab">Profile</a> </li>
+				<li><a href="#messages" data-toggle="tab">Messages</a> </li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active" id="home">conteudo do home</div>
+				<div class="tab-pane" id="profile">conteudo do profile</div>
+				<div class="tab-pane" id="messages">conteudo do messages</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- navbar -->
+	<div class="jumbotron">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="">
+						<span class="glyphicon glyphicon-ok"></span>
+					</a>
+				</div>
+				<form action="" class="navbar-form">
+					<input type="text" placeholder="oi" class="form-control">
+				</form>
+				<button class="btn btn-default navbar-btn">enviar</button>
+				<a href="" class="navbar-link">click</a>
+				<span class="navbar-text">ola</span>
+			</nav>
+		</div>
+	</div>
+
+	<!-- posicionando navbar -->
+	<div class="jumbotron">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="">
+						<span class="glyphicon glyphicon-ok"></span>
+					</a>
+				</div>
+				<button class="btn btn-default navbar-btn">enviar</button>
+				<a href="" class="navbar-link">click</a>
+				<span class="navbar-text">ola</span>
+				<div class="navbar-right">
+					<form action="" class="navbar-form">
+						<input type="text" placeholder="oi" class="form-control">
+					</form>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+	<!-- outras class navbar -->
+	<!-- navbar-fixed-top = fixa o navbar no topo
+	navbar-fixed-botton = fixa no fundo
+	navbar-inverse = inverte a cor do navbar
+	tambem pode criar uma class customizando o style do navbar
+	-->
+
+
+	<!-- painel -->
+	<div class="jumbotron">
+		<div class="container">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">meu painel</h3>
+				</div>
+				<div class="panel-body">
+					corpo do painel
+				</div>
+				<div class="panel-footer">
+					meu rodape
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- modal -->
+	<div class="jumbotron">
+		<div class="container">
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<h4 class="modal-title">modal title</h4>
+						</div>
+						<div class="modal-body">
+							<p>one fine body&hellip;</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+							<button type="button" class="btn btn-primary">save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">abra o modal</button>
+		</div>
+	</div>
+
+	<!-- eventos do modal -->
+	<!-- $('#myModal').modal({backdrop:'static' ,keyboard:false})
+	backdrop = impede o fechamento do modal clicando na tela exterior
+	keyboard = impede o fechamento com o esc -->
+
+	<!-- $('#myModal').modal('show') = exibe o modal
+	$('#myModal').modal('hide') = esconde o modal
+	$('#myModal').modal('toggle') = inverte a exibição -->
+
+	<!-- javascript do modal -->
+	<!-- $('#myModal').on('hide.bs.modal', function (e){
+		//quando o modal for fechado
+	});
+
+	$('#myModal').on('hidden.bs.modal', function (e){
+		//quando o modal já estiver fechado
+	});
+
+	$('#myModal').on('show.bs.modal', function (e){
+		//quando o modal for aberto
+	});
+
+	$('#myModal').on('shown.bs.modal', function (e){
+		//quando o modal já estiver aberto
+	}); -->
+
+	<!-- tooltip -->
+	<div class="jumbotron">[
+		<div class="container">
+			<button class="btn btn-lg btn-primary" data-toggle="tooltip" data-html="true" data-placement="top" 
+			title="o <strong style='color:red'> tooltip </strong> é essa informação que esta vendo">tooltip</button>
+		</div>
+	</div>
+
+	<!-- popover -->
+	<div class="jumbotron">
+		<div class="container">
+			<button class="btn btn-lg btn-primary" data-toggle="popover" id="popover-principal" data-content="seja bem vindo" title="oi">popover</button>
+			<button class="btn btn-lg btn-primary" data-toggle="popover" id="custom-popover">abrir/fechar o popover</button>
+		</div>
+	</div>
+
+	<!-- outros eventos popover: -->
+	<!-- $('show.bs.popover').on(function(){
+		//quando o modal for aberto
+	});
+
+	$('shown.bs.popover').on(function(){
+		//quando o modal já estiver aberto
+	});
+
+	$('hide.bs.popover').on(function(){
+		//quando o modal for fechado
+	});
+
+	$('hidden.bs.popover').on(function(){
+		//quando o modal já estiver fechado
+	}); -->
+
+
+	<!-- alert -->
+	<div class="jumbotron">
+		<div class="container">
+			<div class="alert alert-danger alert-dismissible">
+				algo deu errado
+				<button class="close" data-dismiss="alert">&times;</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron">
+		<div class="container">
+			<div class="alert alert-info alert-dismissible">
+				<h1>atenção usuario</h1>
+				<p>seja bem vindo</p>
+				<a href="">atualizar?</a>
+				<button class="close" data-dismiss="alert">&times;</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- carousel -->
+	<div class="jumbotron">
+		<div class="container">
+			<button id="pause">Pausar</button>
+			<button id="anterior">Voltar</button>
+			<button id="proximo">Avançar</button>
+
+			<input type="text" id="number" value="0">
+			<button id="start">Iniciar</button>
+
+			<div id="carousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel" data-slide-to="1"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="pont.jpg" alt="">
+						<div class="carousel-caption">primeiro slide</div>
+					</div>
+
+					<div class="item">
+						<img src="pont.jpg" alt="">
+						<div class="carousel-caption">segundo slide</div>
+					</div>
+				</div>
+				<a href="#carousel" class="left carousel-control" data-slide="prev">
+					<i class="glyphicon glyphicon-chevron-left"></i>
+				</a>
+				<a href="#carousel" class="right carousel-control" data-slide="next">
+					<i class="glyphicon glyphicon-chevron-right"></i>
+				</a>
+			</div>
+		</div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-	<!-- carregamento de botão script -->
 	<script>
-		$(function(){
-		$('.btn-loading').on('click',function(){
-			$btn = $(this).button('loading');
-			setTImeout(function(){
-				$btn.button('reset');
-			},1000);
+		// carregamento de botão script
+		$(function () {
+			$('.btn-loading').on('click', function () {
+				$btn = $(this).button('loading');
+				setTImeout(function () {
+					$btn.button('reset');
+				}, 1000);
+			});
 		});
-	});
+
+		// script tooltip
+		$('[data-toggle="tooltip"]').tooltip();
+
+		// script popover
+		$('[data-toggle="popover"]').popover({
+			placement:"bottom",
+			html:true,
+			delay:0,
+			animation:false
+		});
+
+		$('#custom-popover').on('click', function(){
+			$('#popover-principal').popover("toggle");
+			// "hide", "show", "destroy"
+		})
+
+
+		// carousel script
+		var btn_pause = $('#pause');
+		var btn_prev = $('#anterior');
+		var btn_next = $('#proximo');
+		var btn_start = $('#start');
+		var btn_number = $('#number');
+
+		var $carousel = $('#carousel');
+
+		btn_pause.on('click', function(){
+			$carousel.carousel('pause');
+		});
+
+		btn_prev.on('click', function(){
+			$carousel.carousel('prev');
+		});
+
+		btn_next.on('click', function(){
+			$carousel.carousel('next');
+		});
+
+		btn_start.on('click', function(){
+			$carousel.carousel(parseInt(input_number.val()));
+		});
+
 	</script>
 
 </body>
+
 </html>
